@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in to Outlook</title>
+    <style>
+      body {
+        background: #f3f2f1;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        background: #fff;
+        padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 360px;
+        min-width: 320px;
+      }
+      .ms-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+      }
+      .ms-logo svg {
+        width: 28px;
+        height: 28px;
+        margin-right: 0.5rem;
+      }
+      .ms-logo span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #222;
+        letter-spacing: 0.01em;
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0 0 1.5rem 0;
+        color: #1b1b1b;
+      }
+      label {
+        display: none;
+      }
+      .input-group {
+        margin-bottom: 0.5rem;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #c8c6c4;
+        border-radius: 0;
+        font-size: 1rem;
+        background: #faf9f8;
+        margin-bottom: 0.5rem;
+      }
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        border-color: #0078d4;
+        outline: none;
+        background: #fff;
+      }
+      .links {
+        font-size: 0.97rem;
+        margin-bottom: 1.5rem;
+      }
+      .links a {
+        color: #0067b8;
+        text-decoration: none;
+        margin-right: 1.2rem;
+      }
+      .links a:hover {
+        text-decoration: underline;
+      }
+      .links .create {
+        font-weight: 500;
+      }
+      .links .security {
+        margin-left: 0;
+      }
+      button {
+        width: 100%;
+        padding: 0.7rem;
+        background: #0067b8;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #005a9e;
+      }
+      .divider {
+        border: none;
+        border-top: 1px solid #e1dfdd;
+        margin: 1.5rem 0 1rem 0;
+      }
+      .sign-in-options {
+        width: 100%;
+        background: #f3f2f1;
+        border: 1px solid #e1dfdd;
+        color: #222;
+        font-size: 1rem;
+        padding: 0.7rem;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        transition: background 0.2s;
+      }
+      .sign-in-options:hover {
+        background: #e5e5e5;
+      }
+      .sign-in-options svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="ms-logo">
+        <svg viewBox="0 0 32 32">
+          <rect fill="#f25022" x="0" y="0" width="15" height="15" />
+          <rect fill="#7fba00" x="17" y="0" width="15" height="15" />
+          <rect fill="#00a4ef" x="0" y="17" width="15" height="15" />
+          <rect fill="#ffb900" x="17" y="17" width="15" height="15" />
+        </svg>
+        <span>Microsoft</span>
+      </div>
+      <h2>Sign in</h2>
+      <form>
+        <div class="input-group">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email, phone, or Skype"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="links">
+          No account? <a href="#" class="create">Create one!</a><br />
+          <a href="#" class="security">Sign in with a security key </a>
+        </div>
+        <button type="submit">Next</button>
+      </form>
+      <hr class="divider" />
+      <button class="sign-in-options">
+        <svg viewBox="0 0 24 24">
+          <path
+            fill="#222"
+            d="M9.5 3a1.5 1.5 0 0 1 3 0v1h-3V3zm-5 5A2.5 2.5 0 0 1 7 5.5h10A2.5 2.5 0 0 1 19.5 8v8A2.5 2.5 0 0 1 17 18.5H7A2.5 2.5 0 0 1 4.5 16V8zm2 0v8A.5.5 0 0 0 7 16.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H7A.5.5 0 0 0 6.5 8z"
+          />
+        </svg>
+        Sign-in options
+      </button>
+    </div>
+  </body>
+</html>
